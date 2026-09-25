@@ -1,0 +1,48 @@
+{
+  "feature": "parrot_trouble",
+  "module": "parrot_utils",
+  "criteria": [
+    {
+      "id": "AC-1",
+      "given": "the parrot is talking and the hour is 6",
+      "when": "the trouble check is evaluated",
+      "then": "it returns true",
+      "function_hint": "check_parrot_trouble_early_morning"
+    },
+    {
+      "id": "AC-2",
+      "given": "the parrot is talking and the hour is 21",
+      "when": "the trouble check is evaluated",
+      "then": "it returns true",
+      "function_hint": "check_parrot_trouble_late_night"
+    },
+    {
+      "id": "AC-3",
+      "given": "the parrot is talking and the hour is 12",
+      "when": "the trouble check is evaluated",
+      "then": "it returns false",
+      "function_hint": "check_parrot_safe_midday"
+    },
+    {
+      "id": "AC-4",
+      "given": "the parrot is not talking and the hour is 5",
+      "when": "the trouble check is evaluated",
+      "then": "it returns false",
+      "function_hint": "check_parrot_quiet_early_morning"
+    },
+    {
+      "id": "AC-5",
+      "given": "the parrot is talking and the hour is exactly 7",
+      "when": "the trouble check is evaluated",
+      "then": "it returns false",
+      "function_hint": "check_parrot_trouble_boundary_start"
+    },
+    {
+      "id": "AC-6",
+      "given": "the parrot is talking and the hour is exactly 20",
+      "when": "the trouble check is evaluated",
+      "then": "it returns false",
+      "function_hint": "check_parrot_trouble_boundary_end"
+    }
+  ]
+}

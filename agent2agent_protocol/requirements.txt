@@ -1,0 +1,8 @@
+a2a-sdk[starlette]
+google-genai
+pytest
+uvicorn
+python-dotenv
+requests
+fastapi
+pydantic

@@ -1,0 +1,18 @@
+[project]
+name = "tdd-agents"
+version = "1.0.0"
+description = "TDD multi-agent pipeline: Requirements -> Tests -> Code via AgentStack"
+requires-python = ">=3.11"
+dependencies = [
+    "agentstack-sdk>=0.7.1",
+    "mcp>=1.30.0,<2.0.0",
+    "google-genai",
+    "pytest",
+    "uvicorn>=0.37.0",
+    "python-dotenv",
+]
+
+[project.scripts]
+spec-analyst = "tdd_agents.spec_analyst:serve"
+test-writer = "tdd_agents.test_writer:serve"
+code-writer = "tdd_agents.code_writer:serve"

@@ -1,0 +1,4 @@
+[console_scripts]
+code-writer = tdd_agents.code_writer:serve
+spec-analyst = tdd_agents.spec_analyst:serve
+test-writer = tdd_agents.test_writer:serve

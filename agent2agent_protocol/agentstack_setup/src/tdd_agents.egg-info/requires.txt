@@ -1,0 +1,5 @@
+agentstack-sdk>=0.7.1
+google-genai
+pytest
+uvicorn>=0.37.0
+python-dotenv

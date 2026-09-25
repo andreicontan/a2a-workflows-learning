@@ -1,0 +1,99 @@
+{
+  "api_name": "todo_list_api",
+  "base_path": "/api/v1",
+  "endpoints": [
+    {
+      "id": "EP-1",
+      "method": "POST",
+      "path": "/todos",
+      "summary": "Create a new todo",
+      "request_body": {
+        "title": "string",
+        "description": "string"
+      },
+      "responses": {
+        "201": {
+          "id": "string",
+          "title": "string",
+          "description": "string",
+          "completed": "boolean",
+          "created_at": "string"
+        },
+        "400": {
+          "error": "string"
+        }
+      }
+    },
+    {
+      "id": "EP-2",
+      "method": "GET",
+      "path": "/todos",
+      "summary": "List all todos",
+      "request_body": null,
+      "responses": {
+        "200": {
+          "data": "array",
+          "count": "integer"
+        }
+      }
+    },
+    {
+      "id": "EP-3",
+      "method": "GET",
+      "path": "/todos/{id}",
+      "summary": "Get a todo by ID",
+      "request_body": null,
+      "responses": {
+        "200": {
+          "id": "string",
+          "title": "string",
+          "description": "string",
+          "completed": "boolean",
+          "created_at": "string"
+        },
+        "404": {
+          "error": "string"
+        }
+      }
+    },
+    {
+      "id": "EP-4",
+      "method": "PUT",
+      "path": "/todos/{id}",
+      "summary": "Update an existing todo",
+      "request_body": {
+        "title": "string",
+        "description": "string",
+        "completed": "boolean"
+      },
+      "responses": {
+        "200": {
+          "id": "string",
+          "title": "string",
+          "description": "string",
+          "completed": "boolean",
+          "updated_at": "string"
+        },
+        "400": {
+          "error": "string"
+        },
+        "404": {
+          "error": "string"
+        }
+      }
+    },
+    {
+      "id": "EP-5",
+      "method": "DELETE",
+      "path": "/todos/{id}",
+      "summary": "Delete a todo by ID",
+      "request_body": null,
+      "responses": {
+        "204": null,
+        "404": {
+          "error": "string"
+        }
+      }
+    }
+  ]
+}
