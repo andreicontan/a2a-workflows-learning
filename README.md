@@ -1,6 +1,6 @@
-# TDD Multi-Agent Pipeline (A2A Protocol)
+# Spec-Test-Code Multi-Agent Pipeline (A2A Protocol)
 
-A simple multi-agent system that automates the TDD cycle using Google's Agent2Agent protocol.
+A simple multi-agent system that automates a coding cycle using Google's Agent2Agent protocol.
 
 ```
 Requirement → Spec Analyst → Test Writer → Code Writer → pytest ✓
